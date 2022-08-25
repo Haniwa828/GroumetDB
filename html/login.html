@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_top">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-227374989-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+    
+        gtag("config", "UA-227374989-1");
+        </script> -->
+    
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>日本グルメDB(仮)</title>
+        
+        <!-- cssのインポート -->
+        <link rel="stylesheet" href="/css/modal.css">
+        <link rel="stylesheet" href="/css/hamburger.css">
+        <link rel="stylesheet" href="/css/rating.css">
+        <link rel="stylesheet" href="/css/base.css">
+    
+        <!-- <link rel="shortcut icon" href="https://haniwa828.github.io/JapanGourmetDB/photo/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://haniwa828.github.io/JapanGourmetDB/photo/icon.png">
+        <link rel="apple-touch-icon" href="https://haniwa828.github.io/JapanGourmetDB/photo/icon.png">
+        <link rel="icon" href="https://haniwa828.github.io/JapanGourmetDB/photo/favicon.ico" type="image/x-icon"> -->
+      </head>
+
+  <body>
+    <div id="header">
+        <div
+            class="header"
+        >
+            <img
+                style="
+                    height: 40px;
+                    width: 40px;
+                "
+                src="/images/icon.png"
+            >
+            日本グルメDB(仮)
+      </div>
+    </div>
+
+    <div id="apply">
+        <p id="title">
+            ログイン
+            <br>
+        </p>
+        <p id="errorLogin" 
+            style="
+                color: red; 
+                display: none;
+            "
+        >
+            グループ名とパスワードが一致しません
+        </p>
+
+        <form name="login">
+            <p>
+                <label>
+                    グループ名 
+                    <input id="group"
+                        name="group"
+                        type="text" 
+                    >
+                </label>
+            </p>
+            <p>
+                <label>
+                    パスワード 
+                    <input id="pass" 
+                        name="pass"
+                        type="text" 
+                    >
+                </label>
+            </p>
+        </form>
+        <p>
+            <button id="btn" 
+                onclick="logIn()"
+            >
+                ログイン
+            </button>
+            <br>
+            <a 
+                href="/html/register.html"
+                style="font-size: small;"
+            >
+                まだグループを作っていない方
+            </a>
+        </p>
+    </div>
+    
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- ログイン判断 -->
+    <script src="/js/login.js"></script>
+
+    <!-- 成功後のレイアウト作成 -->
+    <script src="/js/sucsess.js"></script>
+
+    <!-- メインの機能 -->
+    <script src="/js/function/save.js"></script>
+    
+  </body>
+</html>

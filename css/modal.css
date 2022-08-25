@@ -1,0 +1,42 @@
+/* オーバーレイ */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* モーダルウィンドウ */
+.modal-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 75vh;
+    background-color: #dfdddd;
+    border-radius: 5px;
+    z-index: 11;
+    padding: 2rem;
+}
+
+/* スクロール制限 */
+.no_scroll {
+    overflow: hidden;
+}
+
+/* ボタン */
+.button {
+    color: #fff;
+    background: #5876a3;
+    padding: 3px 3px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+

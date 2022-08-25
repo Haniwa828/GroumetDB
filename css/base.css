@@ -1,0 +1,28 @@
+/* ヘッダー */
+.header{
+    font-size: large;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #BC002D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.announce{
+    margin: 10px 10px 10px 10px;
+    border: 1px solid;
+    border-color: #898989;
+}
+
+.shops{
+    display: block;
+    background-color: #fffafa;
+    text-align: left;
+    border: 1px solid;
+    border-color: #dcdcdc;
+    border-radius: 5px;
+    width: '+ width +';
+    margin: 5px 0px 5px 0px;
+    padding: 10px; position: relative;
+}
