@@ -19,15 +19,15 @@
         <title>グルメDB(仮)</title>
         
         <!-- cssのインポート -->
-        <link rel="stylesheet" href="/css/modal.css">
-        <link rel="stylesheet" href="/css/hamburger.css">
-        <link rel="stylesheet" href="/css/rating.css">
-        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="https://haniwa828.github.io/GroumetDB/css/modal.css">
+        <link rel="stylesheet" href="https://haniwa828.github.io/GroumetDB/css/hamburger.css">
+        <link rel="stylesheet" href="https://haniwa828.github.io/GroumetDB/css/rating.css">
+        <link rel="stylesheet" href="https://haniwa828.github.io/GroumetDB/css/base.css">
     
-        <link rel="shortcut icon" href="https://haniwa828.github.io/GourmetDB/images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="https://haniwa828.github.io/GourmetDB/images/icon.png">
-        <link rel="apple-touch-icon" href="https://haniwa828.github.io/GourmetDB/images/icon.png">
-        <link rel="icon" href="https://haniwa828.github.io/GourmetDB/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="https://haniwa828.github.io/GroumetDB/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://haniwa828.github.io/GroumetDB/images/icon.png">
+        <link rel="apple-touch-icon" href="https://haniwa828.github.io/GroumetDB/images/icon.png">
+        <link rel="icon" href="https://haniwa828.github.io/GroumetDB/images/favicon.ico" type="image/x-icon">
       </head>
 
   <body onload="mainArea()">
@@ -40,7 +40,7 @@
                     height: 40px;
                     width: 40px;
                 "
-                src="/images/icon.png"
+                src="https://haniwa828.github.io/GroumetDB/images/icon.png"
             >
             グルメDB(仮)
       </div>
@@ -159,7 +159,15 @@
             <ul>
                 <li>
                     <a
-                        href="/html/announce.html?announceId=-1"
+                        class="exist"
+                        style="font-size: large;"
+                    >
+                        ホーム
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://haniwa828.github.io/GroumetDB/html/announce.html?announceId=-1"
                         style="font-size: large;"
                     >
                         お知らせ
@@ -188,31 +196,36 @@
                     </div>
                 </li>
                 <li>
-                    <a
+                    <div
                         class="cannot"
-                        href=""
                         target="_blank"
                         style="font-size: large;"
                     >
                         意見/修正依頼
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a
+                    <div
                         class="cannot"
-                        href=""
                         style="font-size: large;"
                     >
                         ヘルプ
-                    </a>
+                </div>
                 </li>
                 <li>
-                    <a
+                    <div
                         class="cannot"
-                        href=""
                         style="font-size: large;"
                     >
                         クレジット
+                </div>
+                </li>
+                <li>
+                    <a
+                        href="https://haniwa828.github.io/GroumetDB/html/login.html"
+                        style="font-size: large;"
+                    >
+                        ログアウト
                     </a>
                 </li>
             </ul>
@@ -243,30 +256,30 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- ログイン判断 -->
-    <script src="/js/login.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/login.js"></script>
 
     <!-- 成功後のレイアウト作成 -->
-    <script src="/js/layout/mainArea.js"></script>
-    <script src="/js/layout/announceArea.js"></script>
-    <script src="/js/layout/mainArea/searchArea.js"></script>
-    <script src="/js/layout/mainArea/searchArea/filter.js"></script>
-    <script src="/js/layout/mainArea/shopArea.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/mainArea.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/announceArea.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/mainArea/searchArea.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/mainArea/searchArea/filter.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/mainArea/shopArea.js"></script>
 
     <!-- メインの機能 -->
-    <script src="/js/function/save.js"></script>
-    <script src="/js/layout/mainArea/shopArea/shop.js"></script>
-    <script src="/js/function/sort.js"></script>
-    <script src="/js/layout/mainArea/shopArea/shopInsert.js"></script>
-    <script src="/js/function/detail.js"></script>
-    <script src="/js/function/search.js"></script>
-    <script src="/js/function/search/inputGet.js"></script>
-    <script src="/js/function/openClose.js"></script>
-    <script src="/js/function/search/wordCheck.js"></script>
-    <script src="/js/function/search/filter.js"></script>
-    <script src="/js/function/search/inputGet.js"></script>
-    <script src="/js/function/changePhoto.js"></script>
-    <script src="/js/function/modalOpen.js"></script>
-    <script src="/js/function/refresh.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/save.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/mainArea/shopArea/shop.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/sort.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/layout/mainArea/shopArea/shopInsert.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/detail.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/search.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/search/inputGet.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/openClose.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/search/wordCheck.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/search/filter.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/search/inputGet.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/changePhoto.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/modalOpen.js"></script>
+    <script src="https://haniwa828.github.io/GroumetDB/js/function/refresh.js"></script>
     
   </body>
 </html>
