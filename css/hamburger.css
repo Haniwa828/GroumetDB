@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background-color: #BC002D;
+    background-color: #006;
 }
 .menu-btn span,
 .menu-btn span:before,
@@ -54,7 +54,7 @@
     top: 0;
     left: 0;
     z-index: 8;
-    background-color: #BC002D;
+    background-color: #006;
 }
 .menu-content ul {
     padding: 70px 10px 0;
@@ -92,7 +92,7 @@
     top: 0;
     left: 0;
     z-index: 8;
-    background-color: #BC002D;
+    background-color: #006;
 }
 .menu-content ul {
     padding: 70px 10px 0;
@@ -126,7 +126,7 @@
     width: 100%;
     font-size: 15px;
     box-sizing: border-box;
-    color:#BC002D;
+    color:#006;
     text-decoration: none;
     padding: 9px 15px 10px 0;
     position: relative;
@@ -153,7 +153,7 @@
     left: 0%;/*leftの値を変更してメニューを画面外へ*/
     display: none;
     z-index: 8;
-    background-color: #BC002D;
+    background-color: #006;
     transition: all 0.5s;/*アニメーション設定*/
 }
 
