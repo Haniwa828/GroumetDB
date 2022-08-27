@@ -1,7 +1,12 @@
 /* ヘッダー */
+body{
+    margin: 0;
+}
 .header{
     font-size: large;
     font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #000066;
     color: #ffffff;
     display: flex;
