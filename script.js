@@ -2,6 +2,7 @@ function submit(){ //　メインページでの要素配置　
     // formの要素取得
     let group = document.getElementById('group');
     let pass = document.getElementById('pass');
+    let mail = document.getElementById('mail');
     let errorGroup = document.getElementById('errorGroup');
     let errorLength = document.getElementById('errorLength');
 
@@ -35,7 +36,7 @@ function submit(){ //　メインページでの要素配置　
             let applyURL = "https://script.google.com/macros/s/AKfycbxJ93sAEqFO3pr4zlGufPjUiBirsEfSkd1q4S2s58Frv-rxJFnIE8MhaEPQz0UK9939dg/exec?group="
 
             // URLの作成
-            applyURL = applyURL + group.value + "&pass=" + pass.value;
+            applyURL = applyURL + group.value + "&pass=" + pass.value + "&mail=" + mail.value;
             
             // ウェブアプリの実行
             fetch(applyURL) // グループ名とパスワードが存在するかの確認及び登録
