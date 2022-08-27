@@ -106,10 +106,10 @@ function addCategoryFilter(id){ // カテゴリ
             <label> \
                 <input name="category" \
                     type="checkbox" \
-                    value="イタリアン" \
+                    value="海鮮" \
                     checked \
                 > \
-                イタリアン　 \
+                海鮮　 \
             </label> \
             <label> \
                 <input name="category" \

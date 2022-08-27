@@ -11,7 +11,7 @@ function genreImage(data){
             data[i].ジャンル = data[i].ジャンル.replace('和食', 'https://haniwa828.github.io/GroumetDB/images/japan.png')
             data[i].ジャンル = data[i].ジャンル.replace('マレー', 'https://haniwa828.github.io/GroumetDB/images/malaysia.png')
             data[i].ジャンル = data[i].ジャンル.replace('中華', 'https://haniwa828.github.io/GroumetDB/images/china.png')
-            data[i].ジャンル = data[i].ジャンル.replace('イタリアン', 'https://haniwa828.github.io/GroumetDB/images/italy.png')
+            data[i].ジャンル = data[i].ジャンル.replace('海鮮', 'https://haniwa828.github.io/GroumetDB/images/crab.png')
             data[i].ジャンル = data[i].ジャンル.replace('喫茶', 'https://haniwa828.github.io/GroumetDB/images/cafe.png')
             data[i].ジャンル = data[i].ジャンル.replace('デザート', 'https://haniwa828.github.io/GroumetDB/images/cake.png')
             data[i].ジャンル = data[i].ジャンル.replace('ラーメン', 'https://haniwa828.github.io/GroumetDB/images/ramen.png')

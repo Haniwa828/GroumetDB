@@ -13,7 +13,7 @@ function filterCheck(Category, Operate, Cost, Atmosphere, Area, Alcohol, data){ 
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/japan.png', '和食');
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/malaysia.png', 'マレー')
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/china.png', '中華');
-                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/italy.png', 'イタリアン');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/crab.png', '海鮮');
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/cake.png', 'デザート');
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/cafe.png', '喫茶');
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/ramen.png', 'ラーメン');
@@ -44,7 +44,7 @@ function filterCheck(Category, Operate, Cost, Atmosphere, Area, Alcohol, data){ 
                                         tempCate = tempCate.replace('マレー', '');
                                         tempCate = tempCate.replace('中華', '');
                                         tempCate = tempCate.replace('洋食', '');
-                                        tempCate = tempCate.replace('イタリアン', '');
+                                        tempCate = tempCate.replace('海鮮', '');
                                         tempCate = tempCate.replace('デザート', '');
                                         tempCate = tempCate.replace('喫茶', '');
                                         tempCate = tempCate.replace('ラーメン', '');
