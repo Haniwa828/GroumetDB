@@ -32,7 +32,7 @@ function logIn(){ // ログイン申請
                 save(pass.value, "password");
 
                 // ページ遷移
-                window.location.href = '/index.html';
+                window.location.href = 'https://haniwa828.github.io/GroumetDB/';
 
                 break;
         }

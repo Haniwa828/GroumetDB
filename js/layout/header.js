@@ -26,7 +26,7 @@ function addHeader(){ // ヘッダー
                 style="width: 15vw; \
             " \
         > \
-        日本グルメDB(仮) \
+        グルメDB(仮) \
     </div> \
     ')
 }

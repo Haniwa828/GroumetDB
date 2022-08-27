@@ -44,7 +44,7 @@ function announce(){
                     " \
                 > \
                     <a \
-                        href="announce.html?announceId='+ i +'" \
+                        href="https://haniwa828.github.io/GroumetDB/html/announce.html?announceId='+ i +'" \
                         style="display: flex;" \
                     > \
                         <span \

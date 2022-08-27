@@ -19,7 +19,7 @@ function addHamburger(id){ //
         <ul> \
             <li> \
                 <a \
-                    href="https://haniwa828.github.io/JapanGourmetDB/html/announce.html?announceId=-1" \
+                    href="https://haniwa828.github.io/GroumetDB/html/announce.html?announceId=-1" \
                     style="font-size: large;" \
                 > \
                     お知らせ \
@@ -58,7 +58,7 @@ function addHamburger(id){ //
             </li> \
             <li> \
                 <a \
-                    href="https://haniwa828.github.io/JapanGourmetDB/html/help.html" \
+                    href="https://haniwa828.github.io/GroumetDB/html/help.html" \
                     style="font-size: large;" \
                 > \
                     ヘルプ \
@@ -66,7 +66,7 @@ function addHamburger(id){ //
             </li> \
             <li> \
                 <a \
-                    href="https://haniwa828.github.io/JapanGourmetDB/html/credit.html" \
+                    href="https://haniwa828.github.io/GroumetDB/html/credit.html" \
                     style="font-size: large;" \
                 > \
                     クレジット \

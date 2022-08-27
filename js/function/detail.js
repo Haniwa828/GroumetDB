@@ -24,7 +24,13 @@ function detailComponent(idNum, forIndivi){
 
     review = review - review%0.5; // 0.5刻みに変更
 
-    let shopid = shopData[idNum].店名.replace('&', 'aannddkkaarrii');
+    shopData[idNum].店名 = shopData[idNum].店名.replace(/&/g, 'aannddkkaarrii');
+    shopData[idNum].店名 = shopData[idNum].店名.replace(/</g, 'ssyyoouunnaarrii');
+    shopData[idNum].店名 = shopData[idNum].店名.replace(/>/g, 'ddaaiinnaarrii');
+    shopData[idNum].店名 = shopData[idNum].店名.replace(/"/g, 'ddaabbuurruuqquuoott');
+    shopData[idNum].店名 = shopData[idNum].店名.replace(/'/g, 'ssiinngglleeqquuoott');
+
+    let shopid = shopData[idNum].店名;
 
     // 詳細欄追加
     $('#container' + forIndivi).append(' \
@@ -120,7 +126,7 @@ function detailComponent(idNum, forIndivi){
                 button \
                 indiviPage \
             " \
-            href="/html/detail.html?shopName='+ shopid +'" \
+            href="https://haniwa828.github.io/GroumetDB/html/detail.html?shopName='+ shopid +'" \
             target="_blank" \
         > \
             別ページで開く \

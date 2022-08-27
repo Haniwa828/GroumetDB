@@ -10,12 +10,12 @@ function filterCheck(Category, Operate, Cost, Atmosphere, Area, Alcohol, data){ 
                                 let target = document.getElementById('shop' + i);
 
                                 let tempCate = data[i].ジャンル.join(','); // 一時的にジャンル名復元
-                                tempCate = tempCate.replace('/images/japan.png', '和食');
-                                tempCate = tempCate.replace('/images/china.png', '中華');
-                                tempCate = tempCate.replace('/images/italy.png', 'イタリアン');
-                                tempCate = tempCate.replace('/images/cake.png', 'デザート');
-                                tempCate = tempCate.replace('/images/cafe.png', '喫茶');
-                                tempCate = tempCate.replace('/images/ramen.png', 'ラーメン');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/japan.png', '和食');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/china.png', '中華');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/italy.png', 'イタリアン');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/cake.png', 'デザート');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/cafe.png', '喫茶');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/ramen.png', 'ラーメン');
 
                                 if(typeof(data[i].定休日) != 'string'){
                                     data[i].定休日 = data[i].定休日.join(', ');

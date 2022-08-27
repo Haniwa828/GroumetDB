@@ -6,8 +6,11 @@ function shopsDetail(){ //　メインページでの要素配置
     shopName = shopName.replace('%20', ' ');
     shopName = shopName.replace('%3%80%80', '　');
     shopName = shopName.replace('aannddkkaarrii', '&');
+    shopName = shopName.replace('ssyyoouunnaarrii', '<');
+    shopName = shopName.replace('ddaaiinnaarrii', '>');
+    shopName = shopName.replace('ddaabbuurruuqquuoott', '\"');
+    shopName = shopName.replace('ssiinngglleeqquuoott', '\'');
 
-    console.log(shopName)
     shopDetailComponent(shopName)
 }
 
@@ -33,7 +36,7 @@ function shopDetailComponent(shopName){ // レイアウト追加 // array, id
         
         case false: // データがあった場合
             let [data, num] = nameCheck(shopName, shopData);
-            if(data == -1){
+            if(num == -1){
                 go2Login()
                 break;
             }
@@ -43,7 +46,6 @@ function shopDetailComponent(shopName){ // レイアウト追加 // array, id
             $('.indiviPage').remove();
             document.getElementById('shop0').onclick = '';
             document.getElementById('container0').onclick = '';
-            console.log(document.getElementById('shop0').onclick);
             break;
         
         default:
@@ -61,14 +63,14 @@ function go2Login(){
         一度ログインするか一覧から選び直してください。 \
     </div> \
     <a \
-        href="/html/login.html" \
+        href="https://haniwa828.github.io/GroumetDB/html/login.html" \
         style="font-size: small;" \
     > \
         ログイン画面へ移動する \
     </a> \
     <br> \
     <a \
-        href="/index.html" \
+        href="https://haniwa828.github.io/GroumetDB/index.html" \
         style="font-size: small;" \
     > \
         店舗一覧へ移動する \
@@ -77,13 +79,14 @@ function go2Login(){
 }
 
 function nameCheck(shopName, data){
+    console.log(data); // shopName === data[0].店名
     for(let i = 0; i < data.length; i++){ // 名前が一致する店の存在確認
         if(data[i].店名 === shopName){
             return [[data[i]], i];
         } 
     }
 
-    return -1;
+    return [data, -1];
 }
 
 // else{ // ある時ー!

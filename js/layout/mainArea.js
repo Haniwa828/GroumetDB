@@ -2,6 +2,15 @@ function mainArea(){ // メイン関連 // function mainArea(id, data)
     // addMainArea(id);
     let announceData = recall("announce");
     let data = recall("sucsess");
+    console.log(data)
+    if(data === null){
+        $('#mainArea').append(' \
+        <div> \
+            左上のメニューから一度ログアウトし、\
+            ログインし直してください。 \
+        </div> \
+        ')
+    }
     announceArea(announceData);
     searchArea("mainArea");
     shopArea("mainArea", data)

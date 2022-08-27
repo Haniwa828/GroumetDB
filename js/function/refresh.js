@@ -1,5 +1,5 @@
 function refresh(){
-    let applyURL = "https://script.google.com/macros/s/AKfycbxkrzEgOlPBcKiYrwkyh6VZJ-6Zrpu0qtyWcLQwGlIlFgcmQnruqLmk1nL149vJcm_F9w/exec?group=";
+    let applyURL = "https://script.google.com/macros/s/AKfycbzT52NKYHxqT6vdAQphXTgXFSRdRCeC7dpdhQ84spaxTgpZE0t3kpnHQdexTxg9Me178g/exec?group=";
     let group = recall('groupName');
     let pass = recall('password');
 

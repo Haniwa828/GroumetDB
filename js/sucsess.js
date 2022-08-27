@@ -3,7 +3,7 @@ function loginSucsess(data){ // function loginSucsess(data, id)
     save(data, "sucsess");
 
     // ページ遷移
-    window.location.href = '/index.html';
+    window.location.href = 'https://haniwa828.github.io/GroumetDB/index.html';
 }
 
 function registerSucsess(){
@@ -16,6 +16,6 @@ function registerSucsess(){
         おすすめの店を投稿しましょう。 \
     </div> \
     <a href="">新規店舗投稿</a> \
-    <a href="/html/login.html">ログインページ</a> \
+    <a href="https://haniwa828.github.io/GroumetDB/html/login.html">ログインページ</a> \
     ');
 }

@@ -1,4 +1,4 @@
-function submit(){ //　メインページでの要素配置
+function submit(){ //　メインページでの要素配置　
     // formの要素取得
     let group = document.getElementById('group');
     let pass = document.getElementById('pass');
@@ -15,6 +15,22 @@ function submit(){ //　メインページでの要素配置
             errorLength.style.display = "block";
             break;
         
+        case group.value.indexOf('\"', 0) != -1:
+        case group.value.indexOf('\'', 0) != -1:
+        case group.value.indexOf('<', 0) != -1:
+        case group.value.indexOf('>', 0) != -1:
+        case group.value.indexOf('&', 0) != -1:
+        case group.value.indexOf('　', 0) != -1:
+        case group.value.indexOf(' ', 0) != -1:
+        case pass.value.indexOf('\"', 0) != -1:
+        case pass.value.indexOf('\'', 0) != -1:
+        case pass.value.indexOf('<', 0) != -1:
+        case pass.value.indexOf('>', 0) != -1:
+        case pass.value.indexOf('&', 0) != -1:
+        case pass.value.indexOf('　', 0) != -1:
+        case pass.value.indexOf(' ', 0) != -1:
+            break;
+
         default:
             let applyURL = "https://script.google.com/macros/s/AKfycbxJ93sAEqFO3pr4zlGufPjUiBirsEfSkd1q4S2s58Frv-rxJFnIE8MhaEPQz0UK9939dg/exec?group="
 

@@ -15,7 +15,7 @@ function announceArea(data){
             " \
         > \
             <a \
-                href="/html/announce.html?announceId='+ i +'" \
+                href="https://haniwa828.github.io/GroumetDB/html/announce.html?announceId='+ i +'" \
                 style="display: flex;" \
             > \
                 <span \
@@ -52,7 +52,7 @@ function announceArea(data){
         " \
     > \
         <a \
-            href="/html/announce.html?announceId=-1" \
+            href="https://haniwa828.github.io/GroumetDB/html/announce.html?announceId=-1" \
         > \
             »全てのお知らせ \
         </a> \
