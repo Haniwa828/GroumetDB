@@ -17,6 +17,8 @@ $(function () {
         $('#forReviewLink' + id4form).append(' \
             <div id="noMatch" style="display: none">一致する結果はありませんでした</div> \
         ')
+
+        return false // aタグのherfを起動させない
     });
     // オーバーレイクリックでもモーダルを閉じるように
     $('.js-close , #overlay').click(function () {
