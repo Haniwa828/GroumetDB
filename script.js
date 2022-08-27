@@ -16,7 +16,7 @@ function submit(){ //　メインページでの要素配置
             break;
         
         default:
-            let applyURL = "https://script.google.com/macros/s/AKfycbyThsWVsnqcryy23-1Tl4FEcLN6LP_Lpc4wiQciTnmktq8NGqdzFlpBT8qS9mE82yqS/exec?group="
+            let applyURL = "https://script.google.com/macros/s/AKfycbxJ93sAEqFO3pr4zlGufPjUiBirsEfSkd1q4S2s58Frv-rxJFnIE8MhaEPQz0UK9939dg/exec?group="
 
             // URLの作成
             applyURL = applyURL + group.value + "&pass=" + pass.value;
