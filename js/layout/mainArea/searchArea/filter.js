@@ -82,6 +82,14 @@ function addCategoryFilter(id){ // カテゴリ
             <label> \
                 <input name="category" \
                     type="checkbox" \
+                    value="マレー" \
+                    checked \
+                > \
+                マレー　 \
+            </label> \
+            <label> \
+                <input name="category" \
+                    type="checkbox" \
                     value="中華" \
                     checked \
                 > \
@@ -340,42 +348,42 @@ function addCostFilter(id){ // 金額
             <label> \
                 <input name="cost" \
                     type="checkbox" \
-                    value="～￥1,000" \
+                    value="～RM10" \
                     checked \
                 > \
-                ～￥1,000　 \
+                ～RM10　 \
             </label> \
             <label> \
                 <input name="cost" \
                     type="checkbox" \
-                    value="￥1,001～￥3,000" \
+                    value="RM11～RM30" \
                     checked \
                 > \
-                ￥1,001～￥3,000　 \
+                RM11～RM30　 \
             </label> \
             <label> \
                 <input name="cost" \
                     type="checkbox" \
-                    value="￥3,001～￥5,000" \
+                    value="RM31～RM50" \
                     checked \
                 > \
-                ￥3,001～￥5,000　 \
+                RM31～RM50　 \
             </label> \
             <label> \
                 <input name="cost" \
                     type="checkbox" \
-                    value="￥5,001～￥1,0000" \
+                    value="RM51～RM100" \
                     checked \
                 > \
-                ￥5,001～￥1,0000　 \
+                RM51～RM100　 \
             </label> \
             <label> \
                 <input name="cost" \
                     type="checkbox" \
-                    value="￥10,001～" \
+                    value="RM101" \
                     checked \
                 > \
-                ￥10,001～　 \
+                RM101　 \
             </label> \
         </div> \
     </div> \
@@ -448,26 +456,122 @@ function addAreaFilter(id){ //
             <label> \
                 <input name="area" \
                     type="checkbox" \
-                    value="東京" \
+                    value="Kuala Lumpur" \
                     checked \
                 > \
-                東京　 \
+                Kuala Lumpur　 \
             </label> \
             <label> \
                 <input name="area" \
                     type="checkbox" \
-                    value="千葉" \
+                    value="Selangor" \
                     checked \
                 > \
-                千葉　 \
+                Selangor　 \
             </label> \
             <label> \
                 <input name="area" \
                     type="checkbox" \
-                    value="福井" \
+                    value="Johor" \
                     checked \
                 > \
-                福井　 \
+                Johor　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Putrajaya" \
+                    checked \
+                > \
+                Putrajaya　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Pinang" \
+                    checked \
+                > \
+                Pinang　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Kedah" \
+                    checked \
+                > \
+                Kedah　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Kelantan" \
+                    checked \
+                > \
+                Kelantan　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Melaka" \
+                    checked \
+                > \
+                Melaka　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Negeri" \
+                    checked \
+                > \
+                Negeri　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Pahang" \
+                    checked \
+                > \
+                Pahang　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Perak" \
+                    checked \
+                > \
+                Perak　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Perlis" \
+                    checked \
+                > \
+                Perlis　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Terengganu" \
+                    checked \
+                > \
+                Terengganu　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Sabah" \
+                    checked \
+                > \
+                Sabah　 \
+            </label> \
+            <label> \
+                <input name="area" \
+                    type="checkbox" \
+                    value="Sarawak" \
+                    checked \
+                > \
+                Sarawak　 \
             </label> \
         </div> \
     </div> \

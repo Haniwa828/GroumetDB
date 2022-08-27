@@ -11,6 +11,7 @@ function filterCheck(Category, Operate, Cost, Atmosphere, Area, Alcohol, data){ 
 
                                 let tempCate = data[i].ジャンル.join(','); // 一時的にジャンル名復元
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/japan.png', '和食');
+                                tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/malaysia.png', 'マレー')
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/china.png', '中華');
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/italy.png', 'イタリアン');
                                 tempCate = tempCate.replace('https://haniwa828.github.io/GroumetDB/images/cake.png', 'デザート');
@@ -40,6 +41,7 @@ function filterCheck(Category, Operate, Cost, Atmosphere, Area, Alcohol, data){ 
                                     }
                                     else if(Category[j] == 'その他'){ // カテゴリー名が「その他」の場合
                                         tempCate = tempCate.replace('和食', '');
+                                        tempCate = tempCate.replace('マレー', '');
                                         tempCate = tempCate.replace('中華', '');
                                         tempCate = tempCate.replace('洋食', '');
                                         tempCate = tempCate.replace('イタリアン', '');

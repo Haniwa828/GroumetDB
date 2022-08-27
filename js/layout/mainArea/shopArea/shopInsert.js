@@ -9,6 +9,7 @@ function genreImage(data){
     for(let i = 0; i < data.length; i++){ // ジャンルを画像に差し替え
         if(typeof(data[i].ジャンル) != 'object'){
             data[i].ジャンル = data[i].ジャンル.replace('和食', 'https://haniwa828.github.io/GroumetDB/images/japan.png')
+            data[i].ジャンル = data[i].ジャンル.replace('マレー', 'https://haniwa828.github.io/GroumetDB/images/malaysia.png')
             data[i].ジャンル = data[i].ジャンル.replace('中華', 'https://haniwa828.github.io/GroumetDB/images/china.png')
             data[i].ジャンル = data[i].ジャンル.replace('イタリアン', 'https://haniwa828.github.io/GroumetDB/images/italy.png')
             data[i].ジャンル = data[i].ジャンル.replace('喫茶', 'https://haniwa828.github.io/GroumetDB/images/cafe.png')
