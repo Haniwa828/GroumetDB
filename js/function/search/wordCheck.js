@@ -37,9 +37,9 @@ function searchShop(id){ // モーダルウィンドウ用
 
     for(let j = 0; j < searchKey.length; j++){ // それぞれのsearchKeyで検索
         for(let i = 0; i < shopNames.length; i++){ // それぞれの要素に対して検索
-            if(shopNames[i].toUpperCase().indexOf(searchKey[j].toUpperCase()) != -1 && document.getElementById('shop' + i).style.display == 'block'){ // 一致する要素がある時ー!
-                target = document.getElementById('shopName' + i);
-                target.style.display = 'block' // 要素ブロックを表示
+            if(shopNames[i].toUpperCase().indexOf(searchKey[j].toUpperCase()) != -1 && document.getElementById('shopName' + i).style.display == 'block'){ // 一致する要素がある時ー!
+                // target = document.getElementById('shopName' + i);
+                // target.style.display = 'block' // 要素ブロックを表示
             }
             else{ // 無いとき......
                 target = document.getElementById('shopName' + i);
