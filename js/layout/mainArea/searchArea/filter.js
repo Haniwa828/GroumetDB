@@ -380,10 +380,10 @@ function addCostFilter(id){ // 金額
             <label> \
                 <input name="cost" \
                     type="checkbox" \
-                    value="RM101" \
+                    value="RM101～" \
                     checked \
                 > \
-                RM101　 \
+                RM101～　 \
             </label> \
         </div> \
     </div> \
