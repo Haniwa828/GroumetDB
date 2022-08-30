@@ -63,18 +63,18 @@ function addSort(id){ // ソート
 }
 
 function addCategoryFilter(id){ // カテゴリ
-    // categoryAll = "categoryAll";
-    // category = "category";
-    // atmosphereAll = "atmosphereAll";
-    // atmosphere = "atmosphere";
-    // operateDayAll = "operateDayAll";
-    // operateDay = "operateDay";
-    // costAll = "costAll";
-    // cost = "cost";
-    // alcoholAll = "alcoholAll";
-    // alcohol = "alcohol";
-    // areaAll = "areaAll";
-    // area = "area";
+    categoryAll = "categoryAll";
+    category = "category";
+    atmosphereAll = "atmosphereAll";
+    atmosphere = "atmosphere";
+    operateDayAll = "operateDayAll";
+    operateDay = "operateDay";
+    costAll = "costAll";
+    cost = "cost";
+    alcoholAll = "alcoholAll";
+    alcohol = "alcohol";
+    areaAll = "areaAll";
+    area = "area";
 
     $('#' + id).append(' \
     <div \
