@@ -65,3 +65,14 @@ function recall(situation){
     // console.log(data);
     return data
 }
+
+
+function deleteStorage(){
+    localStorage.removeItem("sucsessData");
+    localStorage.removeItem("announceData");
+    localStorage.removeItem("shopData");
+    localStorage.removeItem("reviewData");
+    localStorage.removeItem("averageReviewData");
+    localStorage.removeItem("groupName");
+    localStorage.removeItem("password");
+}
