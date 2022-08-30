@@ -67,8 +67,8 @@ function addCategoryFilter(id){ // カテゴリ
     category = "category";
     atmosphereAll = "atmosphereAll";
     atmosphere = "atmosphere";
-    operateDayAll = "operateDayAll";
-    operateDay = "operateDay";
+    OperateDayAll = "OperateDayAll";
+    OperateDay = "OperateDay";
     costAll = "costAll";
     cost = "cost";
     alcoholAll = "alcoholAll";
@@ -331,75 +331,75 @@ function addOperateDayFilter(id){ // 営業日
         </div> \
         <div> \
             <label> \
-                <input name="operateDayAll" \
+                <input name="OperateDayAll" \
                     type="checkbox" \
                     value="全選択" \
                     checked \
-                    onclick="checkAll(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkAll(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 全選択　 \
             </label> \
             <br> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="月曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 月曜　 \
             </label> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="火曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 火曜　 \
             </label> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="水曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 水曜　 \
             </label> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="木曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 木曜　 \
             </label> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="金曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 金曜　 \
             </label> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="土曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 土曜　 \
             </label> \
             <label> \
-                <input name="operateDay" \
+                <input name="OperateDay" \
                     type="checkbox" \
                     value="日曜" \
                     checked \
-                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
+                    onclick="checkOne(' + OperateDayAll + ',' + OperateDay + ')" \
                 > \
                 日曜　 \
             </label> \
