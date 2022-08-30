@@ -18,7 +18,7 @@ function selectGet(){
 
     // それぞれの選択取得用
     let categoryCategory = document.getElementsByName("category");
-    let categoryOperate = document.getElementsByName("operateDay");
+    let categoryOperate = document.getElementsByName("OperateDay");
     let categoryCost = document.getElementsByName("cost");
     let categoryAtmosphere = document.getElementsByName("atmosphere");
     let categoryArea = document.getElementsByName("area");
