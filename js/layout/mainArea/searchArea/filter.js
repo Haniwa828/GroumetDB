@@ -63,6 +63,19 @@ function addSort(id){ // ソート
 }
 
 function addCategoryFilter(id){ // カテゴリ
+    categoryAll = "categoryAll";
+    category = "category";
+    atmosphereAll = "atmosphereAll";
+    atmosphere = "atmosphere";
+    operateDayAll = "operateDayAll";
+    operateDay = "operateDay";
+    costAll = "costAll";
+    cost = "cost";
+    alcoholAll = "alcoholAll";
+    alcohol = "alcohol";
+    areaAll = "areaAll";
+    area = "area";
+
     $('#' + id).append(' \
     <div \
         style="margin-bottom: 5px;" \
@@ -72,10 +85,21 @@ function addCategoryFilter(id){ // カテゴリ
         </div> \
         <div> \
             <label> \
+                <input name="categoryAll" \
+                    type="checkbox" \
+                    value="全選択" \
+                    checked \
+                    onclick="checkAll(' + categoryAll + ',' + category + ')" \
+                > \
+                全選択　 \
+            </label> \
+            <br> \
+            <label> \
                 <input name="category" \
                     type="checkbox" \
                     value="和食" \
                     checked \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
                 > \
                 和食　 \
             </label> \
@@ -84,6 +108,7 @@ function addCategoryFilter(id){ // カテゴリ
                     type="checkbox" \
                     value="マレー" \
                     checked \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
                 > \
                 マレー　 \
             </label> \
@@ -92,6 +117,7 @@ function addCategoryFilter(id){ // カテゴリ
                     type="checkbox" \
                     value="中華" \
                     checked \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
                 > \
                 中華　 \
             </label> \
@@ -100,6 +126,7 @@ function addCategoryFilter(id){ // カテゴリ
                     type="checkbox" \
                     value="洋食" \
                     checked \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
                 > \
                 洋食　 \
             </label> \
@@ -108,6 +135,7 @@ function addCategoryFilter(id){ // カテゴリ
                     type="checkbox" \
                     value="海鮮" \
                     checked \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
                 > \
                 海鮮　 \
             </label> \
@@ -116,32 +144,36 @@ function addCategoryFilter(id){ // カテゴリ
                     type="checkbox" \
                     value="喫茶" \
                     checked \
-                    > \
-                    喫茶　 \
-            </label> \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
+                > \
+                喫茶　 \
+        </label> \
             <label> \
                 <input name="category" \
                     type="checkbox" \
                     value="デザート" \
                     checked \
-                    > \
-                    デザート　 \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
+                > \
+                デザート　 \
             </label> \
             <label> \
                 <input name="category" \
                     type="checkbox" \
                     value="ラーメン" \
                     checked \
-                    > \
-                    ラーメン　 \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
+                > \
+                ラーメン　 \
             </label> \
             <label> \
                 <input name="category" \
                     type="checkbox" \
                     value="その他" \
                     checked \
-                    > \
-                    その他　 \
+                    onclick="checkOne(' + categoryAll + ',' + category + ')" \
+                > \
+                その他　 \
             </label> \
         </div> \
     </div> \
@@ -158,10 +190,21 @@ function addAtmosphereFilter(id){ // 雰囲気
         </div> \
         <div> \
             <label> \
+                <input name="atmosphereAll" \
+                    type="checkbox" \
+                    value="全選択" \
+                    checked \
+                    onclick="checkAll(' + atmosphereAll + ',' + atmosphere + ')" \
+                > \
+                全選択　 \
+            </label> \
+            <br> \
+            <label> \
                 <input name="atmosphere" \
                     type="checkbox" \
                     value="カフェ" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 カフェ　 \
             </label> \
@@ -170,6 +213,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="居酒屋" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 居酒屋　 \
             </label> \
@@ -178,6 +222,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="バー" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 バー　 \
             </label> \
@@ -186,6 +231,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="フードコート" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 フードコート　 \
             </label> \
@@ -194,6 +240,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="ファミレス" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 ファミレス　 \
             </label> \
@@ -202,6 +249,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="キッチンカー" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 キッチンカー　 \
             </label> \
@@ -210,6 +258,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="ファストフード" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 ファストフード　 \
             </label> \
@@ -218,6 +267,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="フォーマル" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 フォーマル　 \
             </label> \
@@ -226,6 +276,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="女子会" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 女子会　 \
             </label> \
@@ -234,6 +285,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="放題系" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 放題系　 \
             </label> \
@@ -242,6 +294,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="テイクアウト" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 テイクアウト　 \
             </label> \
@@ -250,6 +303,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="レストラン" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 レストラン　 \
             </label> \
@@ -258,6 +312,7 @@ function addAtmosphereFilter(id){ // 雰囲気
                     type="checkbox" \
                     value="お一人様" \
                     checked \
+                    onclick="checkOne(' + atmosphereAll + ',' + atmosphere + ')" \
                 > \
                 お一人様　 \
             </label> \
@@ -276,10 +331,21 @@ function addOperateDayFilter(id){ // 営業日
         </div> \
         <div> \
             <label> \
+                <input name="operateDayAll" \
+                    type="checkbox" \
+                    value="全選択" \
+                    checked \
+                    onclick="checkAll(' + operateDayAll + ',' + operateDay + ')" \
+                > \
+                全選択　 \
+            </label> \
+            <br> \
+            <label> \
                 <input name="operateDay" \
                     type="checkbox" \
                     value="月曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 月曜　 \
             </label> \
@@ -288,6 +354,7 @@ function addOperateDayFilter(id){ // 営業日
                     type="checkbox" \
                     value="火曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 火曜　 \
             </label> \
@@ -296,6 +363,7 @@ function addOperateDayFilter(id){ // 営業日
                     type="checkbox" \
                     value="水曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 水曜　 \
             </label> \
@@ -304,6 +372,7 @@ function addOperateDayFilter(id){ // 営業日
                     type="checkbox" \
                     value="木曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 木曜　 \
             </label> \
@@ -312,6 +381,7 @@ function addOperateDayFilter(id){ // 営業日
                     type="checkbox" \
                     value="金曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 金曜　 \
             </label> \
@@ -320,6 +390,7 @@ function addOperateDayFilter(id){ // 営業日
                     type="checkbox" \
                     value="土曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 土曜　 \
             </label> \
@@ -328,6 +399,7 @@ function addOperateDayFilter(id){ // 営業日
                     type="checkbox" \
                     value="日曜" \
                     checked \
+                    onclick="checkOne(' + operateDayAll + ',' + operateDay + ')" \
                 > \
                 日曜　 \
             </label> \
@@ -346,10 +418,21 @@ function addCostFilter(id){ // 金額
         </div> \
         <div> \
             <label> \
+                <input name="costAll" \
+                    type="checkbox" \
+                    value="全選択" \
+                    checked \
+                    onclick="checkAll(' + costAll + ',' + cost + ')" \
+                > \
+                全選択　 \
+            </label> \
+            <br> \
+            <label> \
                 <input name="cost" \
                     type="checkbox" \
                     value="～RM10" \
                     checked \
+                    onclick="checkOne(' + costAll + ',' + cost + ')" \
                 > \
                 ～RM10　 \
             </label> \
@@ -358,6 +441,7 @@ function addCostFilter(id){ // 金額
                     type="checkbox" \
                     value="RM11～RM30" \
                     checked \
+                    onclick="checkOne(' + costAll + ',' + cost + ')" \
                 > \
                 RM11～RM30　 \
             </label> \
@@ -366,6 +450,7 @@ function addCostFilter(id){ // 金額
                     type="checkbox" \
                     value="RM31～RM50" \
                     checked \
+                    onclick="checkOne(' + costAll + ',' + cost + ')" \
                 > \
                 RM31～RM50　 \
             </label> \
@@ -374,6 +459,7 @@ function addCostFilter(id){ // 金額
                     type="checkbox" \
                     value="RM51～RM100" \
                     checked \
+                    onclick="checkOne(' + costAll + ',' + cost + ')" \
                 > \
                 RM51～RM100　 \
             </label> \
@@ -382,6 +468,7 @@ function addCostFilter(id){ // 金額
                     type="checkbox" \
                     value="RM101～" \
                     checked \
+                    onclick="checkOne(' + costAll + ',' + cost + ')" \
                 > \
                 RM101～　 \
             </label> \
@@ -400,10 +487,21 @@ function addAlcoholFilter(id){ // 酒の提供
         </div> \
         <div> \
             <label> \
+                <input name="alcoholAll" \
+                    type="checkbox" \
+                    value="全選択" \
+                    checked \
+                    onclick="checkAll(' + alcoholAll + ',' + alcohol + ')" \
+                > \
+                全選択　 \
+            </label> \
+            <br> \
+            <label> \
                 <input name="alcohol" \
                     type="checkbox" \
                     value="無し" \
                     checked \
+                    onclick="checkOne(' + alcoholAll + ',' + alcohol + ')" \
                 > \
                 無し　 \
             </label> \
@@ -412,6 +510,7 @@ function addAlcoholFilter(id){ // 酒の提供
                     type="checkbox" \
                     value="有り" \
                     checked \
+                    onclick="checkOne(' + alcoholAll + ',' + alcohol + ')" \
                 > \
                 有り　 \
             </label> \
@@ -420,6 +519,7 @@ function addAlcoholFilter(id){ // 酒の提供
                     type="checkbox" \
                     value="有り(豊富)" \
                     checked \
+                    onclick="checkOne(' + alcoholAll + ',' + alcohol + ')" \
                 > \
                 有り(豊富)　 \
             </label> \
@@ -438,10 +538,21 @@ function addAreaFilter(id){ //
         </div> \
         <div> \
             <label> \
+                <input name="areaAll" \
+                    type="checkbox" \
+                    value="全選択" \
+                    checked \
+                    onclick="checkAll(' + areaAll + ',' + area + ')" \
+                > \
+                全選択　 \
+            </label> \
+            <br> \
+            <label> \
                 <input name="area" \
                     type="checkbox" \
                     value="全地域" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 全地域　 \
             </label> \
@@ -450,6 +561,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="チェーン" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 チェーン　 \
             </label> \
@@ -458,6 +570,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Kuala Lumpur" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Kuala Lumpur　 \
             </label> \
@@ -466,6 +579,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Selangor" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Selangor　 \
             </label> \
@@ -474,6 +588,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Johor" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Johor　 \
             </label> \
@@ -482,6 +597,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Putrajaya" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Putrajaya　 \
             </label> \
@@ -490,6 +606,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Pinang" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Pinang　 \
             </label> \
@@ -498,6 +615,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Kedah" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Kedah　 \
             </label> \
@@ -506,6 +624,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Kelantan" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Kelantan　 \
             </label> \
@@ -514,6 +633,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Melaka" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Melaka　 \
             </label> \
@@ -522,6 +642,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Negeri" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Negeri　 \
             </label> \
@@ -530,6 +651,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Pahang" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Pahang　 \
             </label> \
@@ -538,6 +660,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Perak" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Perak　 \
             </label> \
@@ -546,6 +669,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Perlis" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Perlis　 \
             </label> \
@@ -554,6 +678,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Terengganu" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Terengganu　 \
             </label> \
@@ -562,6 +687,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Sabah" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Sabah　 \
             </label> \
@@ -570,6 +696,7 @@ function addAreaFilter(id){ //
                     type="checkbox" \
                     value="Sarawak" \
                     checked \
+                    onclick="checkOne(' + areaAll + ',' + area + ')" \
                 > \
                 Sarawak　 \
             </label> \
