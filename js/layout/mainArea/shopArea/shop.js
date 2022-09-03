@@ -21,7 +21,7 @@ function photoLink(data){ // 店舗情報とレビューの画像リンクの書
 
         if(data[i].写真 != null){ // 画像がある場合のみ
             if((data[i].写真)[0] == ""){
-                (data[i].写真)[0] = 'https://haniwa828.github.io/GroumetDB/images/japan.png';
+                (data[i].写真)[0] = 'https://haniwa828.github.io/GroumetDB/images/noImage.png';
             }
             else{
                 for(let j = 0; j < (data[i].写真).length; j++){ // それぞれの画像の直リンク作成
