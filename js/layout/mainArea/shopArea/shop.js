@@ -19,28 +19,24 @@ function photoLink(data){ // 店舗情報とレビューの画像リンクの書
     for(let i = 0; i < data.length; i++){ 
         data[i].写真 = (String(data[i].写真)).split(/[,]/); // 複数ある場合分割
 
-        console.log(data[i])
-        switch((data[i].写真).length){
-            case 0: // 無いときの画像
-                (data[i].写真)[0] = "https://haniwa828.github.io/GroumetDB/images/noImage.png";
-                break;
-
-            default: // 画像がある場合のみ
+        if(data[i].写真 != null){ // 画像がある場合のみ
+            if((data[i].写真)[0] == ""){
+                (data[i].写真)[0] = 'https://haniwa828.github.io/GroumetDB/images/japan.png';
+            }
+            else{
                 for(let j = 0; j < (data[i].写真).length; j++){ // それぞれの画像の直リンク作成
                     (data[i].写真)[j] = (data[i].写真)[j].substring((data[i].写真)[j].indexOf("id=") + 3) // IDの抜き出し
                     if((data[i].写真)[j] != ""){ // 画像への直リンクに書き換え
-                        (data[i].写真)[j] = 'https://drive.google.com/uc?export=view&id=' + (data[i].写真)[j]
+                        (data[i].写真)[j] = 'https://drive.google.com/uc?export=view&id=' + (data[i].写真)[j] 
                     }
                 }
-                break;
-        }
-        // if(data[i].写真 != null){ // 画像がある場合のみ
+            }
             
-        // }
+        }
     }
 
     return data;
-}
+} // https://haniwa828.github.io/GroumetDB/images/japan.png
 
 function datePick(data){ // 年月日のみ抜き出し
     for(let i = 0; i < data.length - 1; i++){ // レビュー数認識用の数字を除くための-1
