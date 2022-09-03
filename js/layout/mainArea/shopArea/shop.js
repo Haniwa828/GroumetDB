@@ -19,6 +19,7 @@ function photoLink(data){ // 店舗情報とレビューの画像リンクの書
     for(let i = 0; i < data.length; i++){ 
         data[i].写真 = (String(data[i].写真)).split(/[,]/); // 複数ある場合分割
 
+        console.log(data[i])
         switch((data[i].写真).length){
             case 0: // 無いときの画像
                 (data[i].写真)[0] = "https://haniwa828.github.io/GroumetDB/images/noImage.png";
